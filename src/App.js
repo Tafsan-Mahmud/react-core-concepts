@@ -17,18 +17,38 @@ let style = {
         <p>
           Edit done again2 <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
         <p>My first react app</p>
         <h1 className= "" style = {style}> Hello React : {34 + 34}</h1>
         <h2>Detail : {person.name + ' ' + person.job}</h2>
+        <Person></Person>        
+        <Person></Person>        
+        <Person></Person>         
+        <Person></Person>        
+
       </header>
+    </div>
+  );
+}
+
+function Person (){
+  const personStyle = {
+    border:'3px solid red ',
+    margin:'10px',
+    padding: '10px'
+  }
+  const h1Style = {
+    backgroundColor:'yellow',
+    color:'brown',
+    
+  }
+  return(
+    <div style = {personStyle}>
+      <h1>name: sakib al hasan</h1>
+      <h3>hero of the year </h3>
+      <div>
+        <h1 style ={h1Style}>hellow React</h1>
+      </div>
     </div>
   );
 }
