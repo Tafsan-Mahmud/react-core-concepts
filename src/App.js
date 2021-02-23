@@ -2,6 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const person = { 
+    name:'Dr Mahfuzur Rahaman',
+    job:'singer'
+}
+let style = {
+  color:'red',
+  backgroundColor:'yellow'
+}
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +25,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>My first react app</p>
+        <h1 className= "" style = {style}> Hello React : {34 + 34}</h1>
+        <h2>Detail : {person.name + ' ' + person.job}</h2>
       </header>
     </div>
   );
